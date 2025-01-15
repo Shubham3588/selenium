@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class Selenium {
+public class locatorsOne {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
@@ -32,6 +32,7 @@ public class Selenium {
 		driver.findElement(By.cssSelector("input#chkboxOne")).click();
 		driver.findElement(By.cssSelector("input#chkboxTwo")).click();
 		el.click();
+		
 		driver.quit();
 		
 		
