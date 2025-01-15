@@ -17,6 +17,11 @@ public class Selenium {
 		driver.findElement(By.className("signInBtn")).click();
 		String errorMessage = driver.findElement(By.cssSelector("p.error")).getText();
 		System.out.println(errorMessage);
+		driver.findElement(By.xpath("//*[text()=\"Forgot your password?\"]")).click();
+		driver.findElement(By.cssSelector("input[placeholder='Name']")).sendKeys("Shubham");
+		driver.findElement(By.cssSelector("input[placeholder='Name']")).sendKeys("Shubham@test.com");  //CSS Selector
+		driver.findElement(By.cssSelector("input[type='text']:nth-child(4)")).sendKeys("78667676");  //CSS Selector indexing
+		driver.findElement(By.cssSelector("button.reset-pwd-btn")).click();
 		driver.quit();
 		
 		
