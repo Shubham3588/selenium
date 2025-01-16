@@ -26,6 +26,7 @@ public class locatorsTwo {
 	   String expected1 = "Hello "+name +",";
 	   System.out.println(expected1);
 	   Assert.assertEquals(actual1, expected1);
+	   driver.findElement(By.xpath("//*[text()='Log Out']"));
 	   driver.quit();
 
 	}
