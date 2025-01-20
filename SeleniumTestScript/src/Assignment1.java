@@ -28,9 +28,7 @@ public class Assignment1 {
 		String actualText = driver.findElement(By.cssSelector("div.alert.alert-success.alert-dismissible")).getText();
 		String ExpectedText = "Success! The Form has been submitted successfully!.";
 		Assert.assertEquals(actualText, ExpectedText);
-		
-		
-		
+
 	}
 
 }

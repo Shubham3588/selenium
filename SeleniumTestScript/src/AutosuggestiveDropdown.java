@@ -17,20 +17,19 @@ public class AutosuggestiveDropdown {
 		driver.findElement(By.id("autosuggest")).sendKeys("Ind");
 		Thread.sleep(2000);
 		List<WebElement> options = driver.findElements(By.xpath("//*[@class='ui-menu-item'] //a"));
-	//	List<WebElement> elements = driver.findElements(By.class("ui-menu-item"));
+		// List<WebElement> elements = driver.findElements(By.class("ui-menu-item"));
 		int elementsLength = options.size();
 		System.out.println(elementsLength);
-/*		for(int i=0;i<elementsLength;i++) {
-			if(options.get(i).getText().equalsIgnoreCase("India")) {
-				options.get(i).click();
-				break;
-			}
-		
-		}*/
-		
-		for(WebElement option : options) {
-			if(option.getText().equalsIgnoreCase("India"))
-			{
+		/*
+		 * for(int i=0;i<elementsLength;i++) {
+		 * if(options.get(i).getText().equalsIgnoreCase("India")) {
+		 * options.get(i).click(); break; }
+		 * 
+		 * }
+		 */
+
+		for (WebElement option : options) {
+			if (option.getText().equalsIgnoreCase("India")) {
 				option.click();
 			}
 		}
