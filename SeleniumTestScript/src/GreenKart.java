@@ -13,20 +13,21 @@ import org.testng.Assert;
 
 public class GreenKart {
 	int j=0;
-	String[] itemRequired = {"Brocolli","Cucumber","Beetroot"};
-
 	public static void main(String[] args) throws InterruptedException {
+		
+		String[] itemRequired = {"Brocolli","Cucumber","Beetroot"};
+
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
 		GreenKart gt = new GreenKart();
-		gt.selectItem(driver);
+		gt.selectItem(driver,itemRequired);
 
 		}
 	
-	public void selectItem(WebDriver driver) throws InterruptedException {
+	public void selectItem(WebDriver driver,String[] itemRequired) throws InterruptedException {
 		
 		List<WebElement> itemAvailable = driver.findElements(By.cssSelector("h4.product-name"));
 		int size = itemAvailable.size();
