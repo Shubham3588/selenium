@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -55,7 +56,7 @@ public class loginPage {
 		//driver.findElement(By.id("checkbox2")).click();
 		driver.findElement(By.xpath("//div[@class='checkbox checkbox-primary']")).click();
 		driver.findElement(By.xpath("//*[@type='submit']")).click();	
-		String expected = "Success! Thank you! Your order will be delivered in next few weeks :-).";
+		String expected = "× Success! Thank you! Your order will be delivered in next few weeks :-).";
 		String actual = driver.findElement(By.xpath("//*[@class='alert alert-success alert-dismissible']")).getText();
 		Assert.assertEquals(actual, expected);
 		driver.quit();
