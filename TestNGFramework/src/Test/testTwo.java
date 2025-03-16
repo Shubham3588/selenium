@@ -5,9 +5,11 @@ import org.testng.annotations.Test;
 
 public class testTwo {
 	
-	@Test(enabled=true)
-	public void carLoan() {
+	@Test(dataProvider="getData")
+	public void carLoan(String un,String pwd) {
 		System.out.println("Car Loan");
+		System.out.println(un);
+		System.out.println(pwd);
 	}
 	@Test(groups= {"smoke"})
 	public void groupTest() {
@@ -19,7 +21,7 @@ public class testTwo {
 	}
 	
 	@DataProvider
-	public void getData() {
+	public Object[][] getData() {
 		Object[][] data = new Object[3][2];
 		data[0][0]= "un1";
 		data[0][1]="pwd1";
@@ -27,6 +29,7 @@ public class testTwo {
 		data[1][1]="pwd2";
 		data[2][0]= "un3";
 		data[2][1]="pwd3";
+		return data;
 	}
 
 
