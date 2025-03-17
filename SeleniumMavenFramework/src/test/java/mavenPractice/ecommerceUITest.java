@@ -58,6 +58,7 @@ public class ecommerceUITest {
 		String actual = driver.findElement(By.xpath("//*[@class='hero-primary']")).getText();
 		String expected = "THANKYOU FOR THE ORDER.";
 		Assert.assertEquals(actual, expected);
+		driver.quit();
 	
 
 
