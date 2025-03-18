@@ -1,6 +1,7 @@
 package mavenPractice;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import mavenPractice.pageobjects.loginPage;
 
 import java.time.Duration;
 import java.util.List;
@@ -19,14 +20,13 @@ public class ecommerceUITest {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		String requiredItem = "ZARA COAT 3";
-		driver.get("https://rahulshettyacademy.com/client/");
+		
 	driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.findElement(By.id("userEmail")).sendKeys("version@gmail.com");
-		driver.findElement(By.id("userPassword")).sendKeys("Test@123");
-		driver.findElement(By.id("login")).click();
+		loginPage loginpage = new loginPage(driver);
+		loginpage.goTo();
+		loginpage.loginApp("version@gmail.com", "Test@123");
 		List<WebElement> lst = driver.findElements(By.xpath("//h5/b"));
-		
 		for(WebElement itemList:lst) {
 			System.out.println("In for loop");
 			String item = itemList.getText();
