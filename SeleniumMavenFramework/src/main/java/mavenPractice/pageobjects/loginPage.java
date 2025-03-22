@@ -6,11 +6,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class loginPage {
+import mavenPractice.AbstractComponents.AbstractComponent;
+
+public class loginPage extends AbstractComponent{
 	
 	WebDriver driver;
 	
 	public loginPage(WebDriver driver) {
+		super(driver);  //Used to provide the access of driver to AbstractComponent(Parent)
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -27,14 +30,25 @@ public class loginPage {
 	@FindBy(id="login")
 	WebElement login;
 	
+	@FindBy(xpath ="//*[@role='alert']")
+	WebElement errorMessage;
+	
 	public void loginApp(String email,String password) {
 		userEmail.sendKeys(email);
 		userPassword.sendKeys(password);
 		login.click();		
 	}
+	
+	public String validateError() {
+		
+		String actualMesage = errorMessage.getText();
+		return actualMesage;
+		
+	}
 	public void goTo() {
 		driver.get("https://rahulshettyacademy.com/client/");
 	}
+
 
 
 }
