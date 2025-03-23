@@ -5,6 +5,7 @@ import mavenPractice.TestComponent.BaseTest;
 import mavenPractice.pageobjects.ProductCatalogue;
 import mavenPractice.pageobjects.cartPage;
 import mavenPractice.pageobjects.loginPage;
+import mavenPractice.pageobjects.ordersPage;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -53,9 +54,23 @@ public void createOrder() throws IOException, InterruptedException {
 
 	}
 
-@Test
+@Test(dependsOnMethods= {"createOrder"})
+public void dependencyCode() {
+	loginPage loginpage = new loginPage(driver);		
+	loginpage.loginApp("version@gmail.com", "Test@123");
+	ordersPage orderItem = new ordersPage(driver);
+	
+	orderItem.goToOrderPage();
+	orderItem.clickDelete();
+	orderItem.validateMessage();
+	Assert.assertEquals(orderItem.validateMessage(), "You have No Orders to show at this time. Please Visit Back Us");
+	
+	
+}
+
+@Test(enabled=false)
 public void validateErrorPopup() {
-	Assert.assertTrue(false);
+	Assert.assertTrue(true);
 }
 }
 

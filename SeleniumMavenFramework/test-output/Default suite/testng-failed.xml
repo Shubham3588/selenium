@@ -5,7 +5,10 @@
     <classes>
       <class name="mavenPractice.ecommerceUITest">
         <methods>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
           <include name="createOrder"/>
+          <include name="dependencyCode"/>
         </methods>
       </class> <!-- mavenPractice.ecommerceUITest -->
     </classes>

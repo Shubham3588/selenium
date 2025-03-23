@@ -30,7 +30,7 @@ public class loginPage extends AbstractComponent{
 	@FindBy(id="login")
 	WebElement login;
 	
-	@FindBy(xpath ="//*[@role='alert']")
+	@FindBy(xpath ="//div[@id='toast-container']")
 	WebElement errorMessage;
 	
 	public void loginApp(String email,String password) {
@@ -42,7 +42,9 @@ public class loginPage extends AbstractComponent{
 	public String validateError() {
 		
 		String actualMesage = errorMessage.getText();
+		System.out.println(actualMesage);
 		return actualMesage;
+		
 		
 	}
 	public void goTo() {
