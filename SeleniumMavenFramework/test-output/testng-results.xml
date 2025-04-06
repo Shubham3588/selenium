@@ -1,72 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-24T02:10:35 IST" name="Suite" finished-at="2025-03-24T02:10:47 IST" duration-ms="12208">
+  <suite started-at="2025-04-06T00:39:33 IST" name="Default suite" finished-at="2025-04-06T00:40:10 IST" duration-ms="36859">
     <groups>
     </groups>
-    <test started-at="2025-03-24T02:10:35 IST" name="Error Validation Test" finished-at="2025-03-24T02:10:42 IST" duration-ms="7412">
-      <class name="mavenPractice.errorValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:mavenPractice.errorValidationTest@1f59a598]" started-at="2025-03-24T02:10:35 IST" name="launchApplication" finished-at="2025-03-24T02:10:38 IST" duration-ms="2699" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="correctCredential()[pri:0, instance:mavenPractice.errorValidationTest@1f59a598]" started-at="2025-03-24T02:10:38 IST" name="correctCredential" finished-at="2025-03-24T02:10:40 IST" duration-ms="2220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- correctCredential -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mavenPractice.errorValidationTest@1f59a598]" started-at="2025-03-24T02:10:40 IST" name="tearDown" finished-at="2025-03-24T02:10:40 IST" duration-ms="254" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:mavenPractice.errorValidationTest@1f59a598]" started-at="2025-03-24T02:10:40 IST" name="launchApplication" finished-at="2025-03-24T02:10:42 IST" duration-ms="1367" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="errorValidation()[pri:0, instance:mavenPractice.errorValidationTest@1f59a598]" started-at="2025-03-24T02:10:42 IST" name="errorValidation" finished-at="2025-03-24T02:10:42 IST" duration-ms="543" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- errorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mavenPractice.errorValidationTest@1f59a598]" started-at="2025-03-24T02:10:42 IST" name="tearDown" finished-at="2025-03-24T02:10:42 IST" duration-ms="258" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- mavenPractice.errorValidationTest -->
-    </test> <!-- Error Validation Test -->
-    <test started-at="2025-03-24T02:10:35 IST" name="Submit order test" finished-at="2025-03-24T02:10:47 IST" duration-ms="12208">
+    <test started-at="2025-04-06T00:39:33 IST" name="Default test" finished-at="2025-04-06T00:40:10 IST" duration-ms="36859">
       <class name="mavenPractice.ecommerceUITest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:mavenPractice.ecommerceUITest@40a4337a]" started-at="2025-03-24T02:10:35 IST" name="launchApplication" finished-at="2025-03-24T02:10:38 IST" duration-ms="3057" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:mavenPractice.ecommerceUITest@3eb25e1a]" started-at="2025-04-06T00:39:33 IST" name="launchApplication" finished-at="2025-04-06T00:39:40 IST" duration-ms="6739" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="createOrder()[pri:0, instance:mavenPractice.ecommerceUITest@40a4337a]" started-at="2025-03-24T02:10:38 IST" name="createOrder" finished-at="2025-03-24T02:10:43 IST" duration-ms="5289" status="PASS">
+        <test-method signature="createOrder(java.lang.String,java.lang.String)[pri:0, instance:mavenPractice.ecommerceUITest@3eb25e1a]" started-at="2025-04-06T00:39:40 IST" name="createOrder" data-provider="getData" finished-at="2025-04-06T00:39:46 IST" duration-ms="6319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[version@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mavenPractice.ecommerceUITest@40a4337a]" started-at="2025-03-24T02:10:43 IST" name="tearDown" finished-at="2025-03-24T02:10:44 IST" duration-ms="265" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mavenPractice.ecommerceUITest@3eb25e1a]" started-at="2025-04-06T00:39:46 IST" name="tearDown" finished-at="2025-04-06T00:39:47 IST" duration-ms="361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:mavenPractice.ecommerceUITest@40a4337a]" started-at="2025-03-24T02:10:44 IST" name="launchApplication" finished-at="2025-03-24T02:10:46 IST" duration-ms="2334" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:mavenPractice.ecommerceUITest@3eb25e1a]" started-at="2025-04-06T00:39:47 IST" name="launchApplication" finished-at="2025-04-06T00:39:49 IST" duration-ms="2626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="dependencyCode()[pri:0, instance:mavenPractice.ecommerceUITest@40a4337a]" started-at="2025-03-24T02:10:46 IST" name="dependencyCode" finished-at="2025-03-24T02:10:47 IST" depends-on-methods="mavenPractice.ecommerceUITest.createOrder" duration-ms="920" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="createOrder(java.lang.String,java.lang.String)[pri:0, instance:mavenPractice.ecommerceUITest@3eb25e1a]" started-at="2025-04-06T00:39:49 IST" name="createOrder" data-provider="getData" finished-at="2025-04-06T00:40:10 IST" duration-ms="20352" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shubham@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[expected [You have No Orders to show at this time. Please Visit Back Us] but found [You have No Orders to show at this time.
-Please Visit Back Us]]]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h5/b (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49832}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49832/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fab153ac48d2369ccf3716844024933d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [You have No Orders to show at this time. Please Visit Back Us] but found [You have No Orders to show at this time.
-Please Visit Back Us]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at mavenPractice.ecommerceUITest.dependencyCode(ecommerceUITest.java:66)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h5/b (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49832}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49832/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fab153ac48d2369ccf3716844024933d
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at mavenPractice.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:29)
+at mavenPractice.pageobjects.ProductCatalogue.getProductList(ProductCatalogue.java:32)
+at mavenPractice.ecommerceUITest.createOrder(ecommerceUITest.java:37)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -81,23 +83,63 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dependencyCode -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mavenPractice.ecommerceUITest@40a4337a]" started-at="2025-03-24T02:10:47 IST" name="tearDown" finished-at="2025-03-24T02:10:47 IST" duration-ms="282" status="PASS">
+        </test-method> <!-- createOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mavenPractice.ecommerceUITest@3eb25e1a]" started-at="2025-04-06T00:40:10 IST" name="tearDown" finished-at="2025-04-06T00:40:10 IST" duration-ms="372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method signature="dependencyCode()[pri:0, instance:mavenPractice.ecommerceUITest@3eb25e1a]" started-at="2025-04-06T00:40:10 IST" name="dependencyCode" finished-at="2025-04-06T00:40:10 IST" depends-on-methods="mavenPractice.ecommerceUITest.createOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method mavenPractice.ecommerceUITest.dependencyCode() on instance mavenPractice.ecommerceUITest@3eb25e1a depends on not successfully finished methods 
+[mavenPractice.ecommerceUITest.createOrder() on instance mavenPractice.ecommerceUITest@3eb25e1a]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method mavenPractice.ecommerceUITest.dependencyCode() on instance mavenPractice.ecommerceUITest@3eb25e1a depends on not successfully finished methods 
+[mavenPractice.ecommerceUITest.createOrder() on instance mavenPractice.ecommerceUITest@3eb25e1a]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dependencyCode -->
       </class> <!-- mavenPractice.ecommerceUITest -->
-    </test> <!-- Submit order test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

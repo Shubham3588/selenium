@@ -7,7 +7,7 @@
         <methods>
           <include name="launchApplication"/>
           <include name="tearDown"/>
-          <include name="createOrder"/>
+          <include name="createOrder" invocation-numbers="1"/>
           <include name="dependencyCode"/>
         </methods>
       </class> <!-- mavenPractice.ecommerceUITest -->

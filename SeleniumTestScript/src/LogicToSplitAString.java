@@ -23,7 +23,7 @@ public class LogicToSplitAString {
 		driver.findElement(By.xpath("//*[text()=\"Forgot your password?\"]")).click();
 		driver.findElement(By.cssSelector("input[placeholder='Name']")).sendKeys("Shubham");
 		driver.findElement(By.cssSelector("input[placeholder='Name']")).sendKeys("Shubham@test.com"); // CSS Selector
-		driver.findElement(By.cssSelector("input[type='text']:nth-child(4)")).sendKeys("78667676"); // CSS Selector
+		driver.findElement(By.cssSelector("input[type='text']:nth-child(4)")).sendKeys("78667676"); // CSS Selector //
 																									// indexing
 		driver.findElement(By.cssSelector("button.reset-pwd-btn")).click();
 		String cred = driver.findElement(By.cssSelector("p.infoMsg")).getText();
