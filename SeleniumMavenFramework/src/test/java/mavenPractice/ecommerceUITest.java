@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -67,21 +66,11 @@ public class ecommerceUITest extends BaseTest {
 		orderItem.validateMessage();
 		Assert.assertEquals(orderItem.validateMessage(),
 				"You have No Orders to show at this time. Please Visit Back Us");
-
 	}
 
 	@Test(enabled = false)
 	public void validateErrorPopup() {
 		Assert.assertTrue(true);
-	}
-
-	public String getScreenshot(String testCaseName) throws IOException {
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
-		FileUtils.copyFile(source, file);
-		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
-
 	}
 
 	@DataProvider
